@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jiffy Listing | Real Estate Photography</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+  <header class="navbar">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Jiffy Listing Logo" class="logo">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="floorplans.html">Floorplans</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  
+  <!-- HERO SECTION -->
+  <section class="about fade-in">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Edmonton-Based Real Estate Photography</h1>
+      <p>Showcase properties in the best possible light with Jiffy Listing.</p>
+    </div>
+  </section>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about fade-in">
+  <section class="about">
+    <h2>About Jiffy Listing</h2>
+    <p>Our goal at Jiffy Listing is to showcase the property in the best possible light, highlighting its unique features and selling points. We create beautiful, engaging images that attract buyers and help listings stand out.</p>
+    <p>To achieve this goal, we use high-quality equipment and techniques to capture the property from a variety of angles and in different lighting conditions. We pay close attention to composition and framing to create visually appealing images that represent the property accurately and effectively.</p>
+    <p>By working together, we can create a set of images that accurately and effectively represent the property and make it stand out on the real estate market.</p>
+  </section>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <p>We provide high-quality media services for real estate professionals, homeowners, and property managers looking to market their spaces effectively.</p>
+    <ul class="services-grid">
+      <li>Real Estate Photography</li>
+      <li>Virtual Tours</li>
+      <li>Floorplans</li>
+      <li>Drone Photography</li>
+    </ul>
+    <div class="button-wrapper">
+      <a href="register.html" class="button">Book a Session</a>
+    </div>
+  </section>
+
+  <!-- EXTERIOR AND INTERIOR PHOTOGRAPHY-->
+  <section class="exterior photography">
+   <h2>Exterior Photography</h2>
+   <p>High-quality exterior photographs can help to showcase the property's curb appeal and give potential buyers a first impression of the property. These images can also help to highlight the property's unique features and selling points, such as its architecture, landscaping, and outdoor spaces.</p>
+   <p>In addition, exterior photographs can help give potential buyers a sense of the property's location and surroundings. This can be especially important for properties in attractive or desirable neighborhoods, as buyers may be interested in the surrounding area as well as the property itself.</p>
+  </section>
+
+  <section class="interior photography">
+   <h2>Interior Photography</h2>
+   <p>High-quality interior photographs can help to showcase the property's layout, design, and finishes, giving potential buyers a clear understanding of the property's features and amenities. These images can also help to highlight the property's unique selling points, such as a spacious open floor plan, a modern kitchen, or luxurious bathrooms.</p>
+  </section>
+
+  <!--MATTERPOINT VIRTUAL TOURS-->
+  <section class="matterpoint virtual tours">
+   <h2>Matterpoint Virtual Tours</h2>
+   <p>Matterport virtual tours are a valuable tool for real estate listings because they allow potential buyers to experience a property virtually, from the comfort of their own home. This can be especially important during the COVID-19 pandemic, when in-person showings may not be possible or may be limited.</p>
+   <p>Matterport virtual tours provide a detailed and immersive 3D experience of a property, allowing buyers to explore the property at their own pace and from any angle. These tours can include high-quality photographs, as well as interactive floor plans and virtual walkthroughs of the property.</p>
+   <p>In addition to providing a convenient and safe way for buyers to view a property, Matterport virtual tours can also help to save time and effort for both buyers and sellers. Buyers can use these tours to narrow down their options and focus on properties that meet their needs and preferences, while sellers can use them to showcase their properties to a wider audience.</p>
+   <p>Overall, the use of Matterport virtual tours in real estate listings can help to increase the reach and effectiveness of a property's marketing efforts, ultimately leading to a faster sale.</p>
+  </section>
+
+  <!-- CALL TO ACTION SECTION -->
+  <section class="cta">
+    <h2>Ready to Elevate Your Listing?</h2>
+    <p>Let us help you capture the best version of your property. Contact us today to book your session or to learn more about our services.</p>
+    <div class="button-wrapper">
+      <a href="register.html" class="button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Jiffy Listing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll(".fade-in");
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

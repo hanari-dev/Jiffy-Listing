@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Jiffy Listing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Jiffy Listing Logo" class="logo">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="floorplans.html">Floorplans</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- GALLERY -->
+  <section class="fade-in">
+    <h2>Gallery Highlights</h2>
+    <p>Explore a selection of our real estate photography — interior and exterior shots crafted to sell.</p>
+
+    <div class="image-grid">
+      <img src="images/house1.jpg" alt="House Exterior 1">
+      <img src="images/house2.jpg" alt="House Exterior 2">
+      <img src="images/house3.jpg" alt="House Exterior 3">
+      <img src="images/room1.jpg" alt="Interior Room 1">
+      <img src="images/room2.jpg" alt="Interior Room 2">
+      <img src="images/interior3.jpg" alt="Interior Room 3">
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta fade-in">
+    <h2>Like What You See?</h2>
+    <p>Contact us to schedule your shoot or learn more about our services.</p>
+    <a href="register.html" class="button">Book Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Jiffy Listing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll(".fade-in");
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
